@@ -275,11 +275,48 @@
             border-color: var(--accent);
         }
 
+        .summary-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .summary-card h3 {
+            color: var(--accent-light);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .summary-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .summary-card ul {
+            margin: 1rem 0 0 1.2rem;
+            padding-left: 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .summary-card ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-content .summary-card {
+            margin: 1.5rem 0;
+        }
+
         /* Hero Visual */
         .hero-visual {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            justify-content: flex-start;
             position: relative;
         }
 
@@ -676,7 +713,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -699,16 +735,16 @@
                 </p>
                 
                 <!-- Professional Summary -->
-                <div class="professional-summary fade-in-delay" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; text-align: left;">
-                    <h3 style="color: var(--accent-light); margin-bottom: 0.75rem;">Executive Summary</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                <!-- <div class="professional-summary summary-card fade-in-delay">
+                    <h3>Executive Summary</h3>
+                    <p>
                         Data Science Executive with proven track record of building and leading high-impact ML teams across fintech, insurance, and research domains. 
                         Expert in translating business problems into scalable AI solutions that deliver measurable ROI. 
                         Successfully led teams of 15+ data scientists and engineers, delivering 125M+ customer impact and $700K+ annual savings.
                     </p>
-                </div>
+                </div> -->
                 
-                <div class="hero-stats fade-in-delay">
+                <!-- <div class="hero-stats fade-in-delay">
                     <div class="stat">
                         <div class="stat-number">125M+</div>
                         <div class="stat-label">Customers Impacted</div>
@@ -721,7 +757,7 @@
                         <div class="stat-number">2</div>
                         <div class="stat-label">Patents Filed</div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="cta-buttons fade-in-delay">
                     <a href="#contact" class="btn btn-primary">Let's Connect</a>
@@ -730,6 +766,18 @@
             </div>
 
             <div class="hero-visual fade-in-delay">
+                <div class="leadership-summary summary-card fade-in-delay">
+                    <h3>Leadership & Achievements</h3>
+                    <p>
+                        I build and lead high-impact data science teams, translating business challenges into scalable ML solutions. My leadership focuses on mentorship, innovation, and delivering measurable ROI.
+                    </p>
+                    <ul>
+                        <li>Led teams of 5-15 data scientists & engineers</li>
+                        <li>Built systems processing 100B+ annual transactions</li>
+                        <li>Reduced aircraft maintenance costs by 15%</li>
+                        <li>Mentored and scaled cross-functional teams</li>
+                    </ul>
+                </div>
                 <div class="visual-card floating">
                     <div class="tech-grid">
                         <div class="tech-item">Python</div>
@@ -751,7 +799,7 @@
     </section>
 
     <!-- About Preview Section -->
-    <section id="about" class="about-preview">
+    <!-- <section id="about" class="about-preview">
         <div class="section-container">
             <h2 class="section-title gradient-text">About Me</h2>
             <div class="about-grid">
@@ -807,7 +855,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Experience Timeline Section -->
     <section id="experience" class="experience-timeline">
@@ -820,7 +868,7 @@
                         <p class="company">Gartner</p>
                         <span class="date">June 2024 - Present</span>
                         <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
-                            Leading client retention analytics initiatives driving data-driven decision making across research and business groups.
+                            Part of the Data Science Group responsible for Client Retention Analytics, delivering capabilities for data-driven decision making and interventions for various research and business groups.
                         </p>
                     </div>
                 </div>
@@ -830,7 +878,7 @@
                         <p class="company">Paytm</p>
                         <span class="date">June 2022 - July 2024</span>
                         <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
-                            Built and led 15+ member data science team delivering $700K+ annual savings through fraud detection and risk analytics solutions.
+                            Led data science for credit card partnerships, developing ML models to qualify 80M+ customers and building large-scale data pipelines processing 100B+ annual transactions.
                         </p>
                     </div>
                 </div>
@@ -840,7 +888,7 @@
                         <p class="company">UnitedHealth Group</p>
                         <span class="date">January 2022 - June 2022</span>
                         <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
-                            Led ML engineering team focusing on healthcare analytics and predictive modeling for patient outcomes.
+                            Led an ML engineering team focusing on healthcare analytics and predictive modeling for patient outcomes.
                         </p>
                     </div>
                 </div>
@@ -860,7 +908,7 @@
                         <p class="company">Rolls-Royce</p>
                         <span class="date">November 2015 - November 2018</span>
                         <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
-                            Built predictive maintenance models for aircraft engines using ML and IoT sensor data, reducing maintenance costs by 15%.
+                            Worked for the Digital and Engineering Capability Function at Rolls-Royce Bangalore.
                         </p>
                     </div>
                 </div>
@@ -880,7 +928,7 @@
                         <p class="company">Altair</p>
                         <span class="date">January 2014 - May 2015</span>
                         <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
-                            Developed core components for CAE simulation software used by Fortune 500 companies in automotive and aerospace industries.
+                            Worked as a consultant in the Enterprise Solution Group, providing customized and efficient CAE solutions for customers in the automotive industry.
                         </p>
                     </div>
                 </div>
@@ -890,67 +938,8 @@
                         <p class="company">GE Aviation</p>
                         <span class="date">July 2011 - January 2014</span>
                         <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
-                            Rotational program developing expertise in aircraft engine systems, data analytics, and engineering processes.
+                            Responsibilities included maintaining a custom tool suite for jet engine compressor blade design and performing impact dynamics simulations for engine fan blades.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership & Achievements Section -->
-    <section id="leadership" class="about-preview">
-        <div class="section-container">
-            <h2 class="section-title gradient-text">Leadership & Achievements</h2>
-            <div class="about-grid">
-                <div class="about-text fade-in">
-                    <p>
-                        As a data science leader, I've successfully built and managed cross-functional teams while delivering 
-                        high-impact ML solutions across diverse domains. My leadership approach focuses on empowering team members, 
-                        fostering innovation, and aligning technical solutions with business objectives.
-                    </p>
-                    <p>
-                        I've consistently delivered measurable business impact through my work:
-                    </p>
-                    <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
-                        <li style="margin-bottom: 0.5rem;">Led teams of 5-15 data scientists and engineers across multiple organizations</li>
-                        <li style="margin-bottom: 0.5rem;">Built ML systems processing 100+ billion transactions annually</li>
-                        <li style="margin-bottom: 0.5rem;">Delivered $700K+ annual savings through fraud detection solutions</li>
-                        <li style="margin-bottom: 0.5rem;">Impacted 125M+ customers through intelligent analytics solutions</li>
-                        <li style="margin-bottom: 0.5rem;">Filed 2 patents in ML and data science methodologies</li>
-                        <li style="margin-bottom: 0.5rem;">Reduced aircraft maintenance costs by 15% through predictive models</li>
-                    </ul>
-                </div>
-                
-                <div class="skills-preview fade-in-delay">
-                    <div class="skill-category">
-                        <h3>👥 Team Leadership</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Team Building</span>
-                            <span class="skill-tag">Mentoring</span>
-                            <span class="skill-tag">Performance Management</span>
-                            <span class="skill-tag">Cross-functional Collaboration</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>📈 Strategic Planning</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Roadmap Development</span>
-                            <span class="skill-tag">Resource Planning</span>
-                            <span class="skill-tag">Budget Management</span>
-                            <span class="skill-tag">OKR Setting</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>💼 Business Impact</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">ROI Optimization</span>
-                            <span class="skill-tag">Stakeholder Management</span>
-                            <span class="skill-tag">Product Strategy</span>
-                            <span class="skill-tag">Change Management</span>
-                        </div>
                     </div>
                 </div>
             </div>
