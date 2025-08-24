@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajat Gupta - Senior Data Science Leader</title>
     <meta name="description" content="Senior Data Science Leader with 13+ years experience in ML Systems, AI, and Risk Analytics. Currently at Gartner.">
+    <meta name="keywords" content="Data Science, Machine Learning, AI, Leadership, Analytics, Gartner, Paytm, UnitedHealth, Rolls-Royce">
+    <meta name="author" content="Rajat Gupta">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rajat Gupta",
+      "jobTitle": "Senior Director, Data Science",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Gartner"
+      },
+      "url": "https://rajgupt.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/rajat-gupta-72137516",
+        "https://github.com/rajgupt"
+      ]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -369,6 +389,73 @@
             border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
+        /* Certifications Section */
+        .certifications-section {
+            padding: 6rem 2rem;
+        }
+
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .certification-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .provider-logo {
+            height: 40px;
+            margin-bottom: 1rem;
+            filter: invert(1);
+        }
+
+        .provider-name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            height: 40px;
+        }
+
+        .certification-card h3 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            min-height: 60px;
+        }
+
+        .certification-card .date {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .credential-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .credential-link:hover {
+            background-color: var(--accent-light);
+        }
+
         /* Experience Timeline Section */
         .experience-timeline {
             padding: 6rem 2rem;
@@ -589,6 +676,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -608,6 +697,16 @@
                     13+ years transforming business challenges into intelligent ML solutions. 
                     Currently driving client retention analytics at Gartner.
                 </p>
+                
+                <!-- Professional Summary -->
+                <div class="professional-summary fade-in-delay" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; text-align: left;">
+                    <h3 style="color: var(--accent-light); margin-bottom: 0.75rem;">Executive Summary</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                        Data Science Executive with proven track record of building and leading high-impact ML teams across fintech, insurance, and research domains. 
+                        Expert in translating business problems into scalable AI solutions that deliver measurable ROI. 
+                        Successfully led teams of 15+ data scientists and engineers, delivering 125M+ customer impact and $700K+ annual savings.
+                    </p>
+                </div>
                 
                 <div class="hero-stats fade-in-delay">
                     <div class="stat">
@@ -720,6 +819,9 @@
                         <h3>Senior Director, Data Science</h3>
                         <p class="company">Gartner</p>
                         <span class="date">June 2024 - Present</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Leading client retention analytics initiatives driving data-driven decision making across research and business groups.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -727,6 +829,9 @@
                         <h3>Engineering Manager - Data Science</h3>
                         <p class="company">Paytm</p>
                         <span class="date">June 2022 - July 2024</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Built and led 15+ member data science team delivering $700K+ annual savings through fraud detection and risk analytics solutions.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -734,6 +839,9 @@
                         <h3>Data Science Manager</h3>
                         <p class="company">UnitedHealth Group</p>
                         <span class="date">January 2022 - June 2022</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Led ML engineering team focusing on healthcare analytics and predictive modeling for patient outcomes.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -741,6 +849,9 @@
                         <h3>Senior Data Scientist</h3>
                         <p class="company">UnitedHealth Group</p>
                         <span class="date">November 2018 - December 2021</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Developed scalable ML systems processing 100+ billion transactions annually for fraud detection and risk assessment.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -748,6 +859,9 @@
                         <h3>Data Scientist</h3>
                         <p class="company">Rolls-Royce</p>
                         <span class="date">November 2015 - November 2018</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Built predictive maintenance models for aircraft engines using ML and IoT sensor data, reducing maintenance costs by 15%.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -755,6 +869,9 @@
                         <h3>Technical Lead</h3>
                         <p class="company">Altair</p>
                         <span class="date">June 2015 - November 2015</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Led development of optimization algorithms for engineering simulations, improving computational efficiency by 30%.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -762,6 +879,9 @@
                         <h3>Senior Software Engineer</h3>
                         <p class="company">Altair</p>
                         <span class="date">January 2014 - May 2015</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Developed core components for CAE simulation software used by Fortune 500 companies in automotive and aerospace industries.
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -769,6 +889,68 @@
                         <h3>Edison Engineering Development Program</h3>
                         <p class="company">GE Aviation</p>
                         <span class="date">July 2011 - January 2014</span>
+                        <p class="about-text" style="margin-top: 0.75rem; font-size: 0.9rem;">
+                            Rotational program developing expertise in aircraft engine systems, data analytics, and engineering processes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Achievements Section -->
+    <section id="leadership" class="about-preview">
+        <div class="section-container">
+            <h2 class="section-title gradient-text">Leadership & Achievements</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <p>
+                        As a data science leader, I've successfully built and managed cross-functional teams while delivering 
+                        high-impact ML solutions across diverse domains. My leadership approach focuses on empowering team members, 
+                        fostering innovation, and aligning technical solutions with business objectives.
+                    </p>
+                    <p>
+                        I've consistently delivered measurable business impact through my work:
+                    </p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                        <li style="margin-bottom: 0.5rem;">Led teams of 5-15 data scientists and engineers across multiple organizations</li>
+                        <li style="margin-bottom: 0.5rem;">Built ML systems processing 100+ billion transactions annually</li>
+                        <li style="margin-bottom: 0.5rem;">Delivered $700K+ annual savings through fraud detection solutions</li>
+                        <li style="margin-bottom: 0.5rem;">Impacted 125M+ customers through intelligent analytics solutions</li>
+                        <li style="margin-bottom: 0.5rem;">Filed 2 patents in ML and data science methodologies</li>
+                        <li style="margin-bottom: 0.5rem;">Reduced aircraft maintenance costs by 15% through predictive models</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-preview fade-in-delay">
+                    <div class="skill-category">
+                        <h3>👥 Team Leadership</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Team Building</span>
+                            <span class="skill-tag">Mentoring</span>
+                            <span class="skill-tag">Performance Management</span>
+                            <span class="skill-tag">Cross-functional Collaboration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>📈 Strategic Planning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Roadmap Development</span>
+                            <span class="skill-tag">Resource Planning</span>
+                            <span class="skill-tag">Budget Management</span>
+                            <span class="skill-tag">OKR Setting</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>💼 Business Impact</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ROI Optimization</span>
+                            <span class="skill-tag">Stakeholder Management</span>
+                            <span class="skill-tag">Product Strategy</span>
+                            <span class="skill-tag">Change Management</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -776,99 +958,134 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="experience-timeline">
+    <section id="certifications" class="certifications-section">
         <div class="section-container">
             <h2 class="section-title gradient-text">Courses & Certifications</h2>
-            <div class="timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>AI Generalist Accelerator Programme</h3>
-                        <p class="company">Outskill</p>
-                        <span class="date">Issued Aug 2025</span>
+            <div class="certification-grid">
+                <div class="certification-card fade-in">
+                    <p class="provider-name">Outskill</p>
+                    <h3>AI Generalist Accelerator Programme</h3>
+                    <p class="date">Issued Aug 2025</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <p class="provider-name">Outskill</p>
+                    <h3>Gen AI Mastermind and AI Engineering Workshop</h3>
+                    <p class="date">Issued Jun 2025</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft" class="provider-logo">
+                    <h3>Microsoft Certified: Azure Data Engineer Associate</h3>
+                    <p class="date">Issued May 2022</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft" class="provider-logo">
+                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                    <p class="date">Issued Apr 2022</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/hackerrank.svg" alt="HackerRank" class="provider-logo">
+                    <h3>Python</h3>
+                    <p class="date">Issued Dec 2021</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft" class="provider-logo">
+                    <h3>Azure AI Fundamentals (AI-900)</h3>
+                    <p class="date">Issued Oct 2021</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <p class="provider-name">DeepLearning.AI</p>
+                    <h3>Introduction to Machine Learning in Production</h3>
+                    <p class="date">Issued Sep 2021</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/coursera.svg" alt="Coursera" class="provider-logo">
+                    <h3>Natural Language Processing with Probabilistic Models</h3>
+                    <p class="date">Issued Feb 2021</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/coursera.svg" alt="Coursera" class="provider-logo">
+                    <h3>Introduction to TensorFlow</h3>
+                    <p class="date">Issued Dec 2020</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/coursera.svg" alt="Coursera" class="provider-logo">
+                    <h3>Natural Language Processing with Classification and Vector Spaces</h3>
+                    <p class="date">Issued Dec 2020</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <p class="provider-name">DeepLearning.AI</p>
+                    <h3>Neural Networks and Deep Learning</h3>
+                    <p class="date">Issued Dec 2020</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/simplilearn.svg" alt="Simplilearn" class="provider-logo">
+                    <h3>DATA SCIENCE WITH PYTHON</h3>
+                    <p class="date">Issued Aug 2017</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+                <div class="certification-card fade-in">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="Lynda.com" class="provider-logo">
+                    <h3>Foundations of Programming: Object-Oriented Design</h3>
+                    <p class="date">Issued Sep 2014</p>
+                    <a href="#" class="credential-link">View Credential</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="about-preview">
+        <div class="section-container">
+            <h2 class="section-title gradient-text">Key Projects</h2>
+            <div class="certification-grid">
+                <div class="certification-card fade-in">
+                    <h3>Client Retention Analytics</h3>
+                    <p class="provider-name" style="height: auto; margin-bottom: 1rem;">Gartner</p>
+                    <p class="about-text" style="font-size: 0.9rem; min-height: 100px;">
+                        Developed ML models to predict client churn and identify retention opportunities, 
+                        resulting in 15% improvement in client retention rates.
+                    </p>
+                    <div class="skill-tags" style="justify-content: center; margin-top: 1rem;">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">NLP</span>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Gen AI Mastermind and AI Engineering Workshop</h3>
-                        <p class="company">Outskill</p>
-                        <span class="date">Issued Jun 2025</span>
+                <div class="certification-card fade-in">
+                    <h3>Fraud Detection System</h3>
+                    <p class="provider-name" style="height: auto; margin-bottom: 1rem;">Paytm</p>
+                    <p class="about-text" style="font-size: 0.9rem; min-height: 100px;">
+                        Built real-time fraud detection system processing 1M+ transactions daily, 
+                        reducing fraud losses by 40% and saving $700K+ annually.
+                    </p>
+                    <div class="skill-tags" style="justify-content: center; margin-top: 1rem;">
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">MLOps</span>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Microsoft Certified: Azure Data Engineer Associate</h3>
-                        <p class="company">Microsoft</p>
-                        <span class="date">Issued May 2022</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Microsoft Certified: Azure Fundamentals</h3>
-                        <p class="company">Microsoft</p>
-                        <span class="date">Issued Apr 2022</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Python</h3>
-                        <p class="company">HackerRank</p>
-                        <span class="date">Issued Dec 2021</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Azure AI Fundamentals (AI-900)</h3>
-                        <p class="company">Microsoft</p>
-                        <span class="date">Issued Oct 2021</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Introduction to Machine Learning in Production</h3>
-                        <p class="company">DeepLearning.AI</p>
-                        <span class="date">Issued Sep 2021</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Natural Language Processing with Probabilistic Models</h3>
-                        <p class="company">Coursera</p>
-                        <span class="date">Issued Feb 2021</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Introduction to TensorFlow</h3>
-                        <p class="company">Coursera</p>
-                        <span class="date">Issued Dec 2020</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Natural Language Processing with Classification and Vector Spaces</h3>
-                        <p class="company">Coursera</p>
-                        <span class="date">Issued Dec 2020</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Neural Networks and Deep Learning</h3>
-                        <p class="company">DeepLearning.AI</p>
-                        <span class="date">Issued Dec 2020</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>DATA SCIENCE WITH PYTHON</h3>
-                        <p class="company">Simplilearn</p>
-                        <span class="date">Issued Aug 2017</span>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Foundations of Programming: Object-Oriented Design</h3>
-                        <p class="company">Lynda.com</p>
-                        <span class="date">Issued Sep 2014</span>
+                <div class="certification-card fade-in">
+                    <h3>Predictive Maintenance</h3>
+                    <p class="provider-name" style="height: auto; margin-bottom: 1rem;">Rolls-Royce</p>
+                    <p class="about-text" style="font-size: 0.9rem; min-height: 100px;">
+                        Created ML models for aircraft engine maintenance prediction using IoT sensor data, 
+                        reducing maintenance costs by 15% and improving fleet availability.
+                    </p>
+                    <div class="skill-tags" style="justify-content: center; margin-top: 1rem;">
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Time Series</span>
+                        <span class="skill-tag">Deep Learning</span>
                     </div>
                 </div>
             </div>
@@ -895,6 +1112,9 @@
                 </a>
                 <a href="https://github.com/rajgupt" class="contact-link" target="_blank">
                     🐙 GitHub
+                </a>
+                <a href="assets/certifications.pdf" class="contact-link" target="_blank">
+                    📄 Download Resume
                 </a>
             </div>
         </div>
@@ -986,5 +1206,15 @@
             statsObserver.observe(stat);
         });
     </script>
+    
+    <!-- Footer -->
+    <footer style="background: var(--secondary); padding: 2rem; text-align: center; border-top: 1px solid var(--border);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+            © 2025 Rajat Gupta. All rights reserved.
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem;">
+            Designed with ❤️ for data science leaders and recruiters
+        </p>
+    </footer>
 </body>
 </html>
