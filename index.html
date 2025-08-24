@@ -353,6 +353,121 @@
             border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
+        /* Experience Timeline Section */
+        .experience-timeline {
+            padding: 6rem 2rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--secondary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: 1rem 40px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 60px;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 60px;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--accent);
+            border: 4px solid var(--primary);
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background: var(--card-bg);
+            position: relative;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.25rem;
+            color: var(--accent-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .company {
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .date {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 20px;
+            }
+
+            .timeline-item:nth-child(odd) {
+                left: 0;
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+                padding-left: 60px;
+            }
+
+            .timeline-item::after {
+                left: 10px;
+            }
+        }
+
         /* Contact Section */
         .contact {
             padding: 4rem 2rem;
@@ -571,6 +686,71 @@
                             <span class="skill-tag">MLflow</span>
                             <span class="skill-tag">BentoML</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience-timeline">
+        <div class="section-container">
+            <h2 class="section-title gradient-text">My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior Director, Data Science</h3>
+                        <p class="company">Gartner</p>
+                        <span class="date">June 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Engineering Manager - Data Science</h3>
+                        <p class="company">Paytm</p>
+                        <span class="date">June 2022 - July 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Data Science Manager</h3>
+                        <p class="company">UnitedHealth Group</p>
+                        <span class="date">January 2022 - June 2022</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior Data Scientist</h3>
+                        <p class="company">UnitedHealth Group</p>
+                        <span class="date">November 2018 - December 2021</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <p class="company">Rolls-Royce</p>
+                        <span class="date">November 2015 - November 2018</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Technical Lead</h3>
+                        <p class="company">Altair</p>
+                        <span class="date">June 2015 - November 2015</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <p class="company">Altair</p>
+                        <span class="date">January 2014 - May 2015</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Edison Engineering Development Program</h3>
+                        <p class="company">GE Aviation</p>
+                        <span class="date">July 2011 - January 2014</span>
                     </div>
                 </div>
             </div>
